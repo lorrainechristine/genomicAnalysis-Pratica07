@@ -50,8 +50,8 @@ files <- file.path(samples, "quant.sf")
 files #32 entries
 
 ## Give unique name for each element
-names(files) <- str_replace(samples, "/home/aluno/Downloads/06-DGEmtDNA/", "") %>% 
-  str_replace("_mtDNA-salmon", "") 
+names(files) <- basename(samples) %>%
+  str_remove("_mtDNA-salmon$")
 
 ## Load the annotation table for the mtDNA genes
 tx2gene <- read.delim("/home/aluno/Downloads/06-DGEmtDNA/mtDNA_annot.txt")
