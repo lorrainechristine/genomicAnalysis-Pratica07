@@ -15,6 +15,20 @@
 # install.packages("ggrepel")
 # install.packages("beepr")
 
+#if got error installing tximport and DEGreport, try:
+
+#
+# if (!require("BiocManager", quietly = TRUE))
+   # install.packages("BiocManager")
+
+# BiocManager::install("DEGreport")
+
+# if (!require("BiocManager", quietly = TRUE))
+    # install.packages("BiocManager")
+
+# BiocManager::install("tximport")
+
+
 # Setup----
 ## Loading Bioconductor and CRAN libraries
 library(DESeq2)
